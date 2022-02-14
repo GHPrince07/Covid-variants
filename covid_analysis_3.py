@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv('covid-variants.csv', index_col='location')
 
-df_1 = df.loc['Angola']
+df_1 = df.loc['Argentina']
 
 # print(df_1['date'].drop_duplicates())
 df_2 = pd.DataFrame({})
@@ -27,9 +27,9 @@ plt.plot(df_2['date'], df_2['num_sequences'])
 
 plt.xticks(rotation='vertical')
 
-plt.title('Angola Covid Sum')
+plt.title('Argentina Covid Sum')
 plt.xlabel('date')
 plt.ylabel('num_sequences_sum')
-plt.legend(labels=['Angola'], loc='best')
+plt.legend(labels=['Argentina'], loc='best')
 
 plt.show()
