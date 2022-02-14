@@ -20,7 +20,7 @@ for date in df_2['date']:
     new_list.append(num_sequences_sum)
 
 df_2['num_sequences'] = new_list
-print(df_2)
+# print(df_2)
 
 plt.figure(figsize=(10, 10))
 plt.plot(df_2['date'], df_2['num_sequences'])
