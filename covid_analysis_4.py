@@ -23,7 +23,7 @@ df_2['num_sequences'] = new_list
 # print(df_2)
 
 plt.figure(figsize=(10, 10))
-plt.plot(df_2['date'], df_2['num_sequences'])
+sns.regplot(df_2['date'], df_2['num_sequences'])
 
 plt.xticks(rotation='vertical')
 
